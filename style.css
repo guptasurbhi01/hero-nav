@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 body {
       font-family: Arial, sans-serif;
@@ -15,6 +16,7 @@ body {
       /* padding: 0 10%; */
       /* padding: 25px 0px; */
       color: black;
+      /* border: 2px solid black; */
     }
 
     header h1{
@@ -25,21 +27,22 @@ body {
 
     .surbhi-herobar{
         margin: 0 auto;
-        width: 76rem;
+        max-width: 76rem;
         /* padding: 3px 0px; */
     }
 
     .surbhi-nav{
         width: 100%;
         /* padding: 0 10%; */
+        /* border: 2px solid black; */
     }
     .sn{
-      width: 76rem;
+      max-width: 76rem;
       margin: auto;
     }
 
     nav {
-        padding: 0 2rem;
+        /* padding: 0 2rem; */
     background-color: transparent;
     white-space: nowrap;
     display: flex;
@@ -55,7 +58,7 @@ body {
         justify-content: center;
         align-items: center;
       color: RGB(117, 117, 117);
-      padding: 29px;
+      padding: 2rem 0;
       margin: 0 10px;
       cursor: pointer;
       height: 2.5rem;
@@ -70,6 +73,7 @@ body {
 
     .container-items{
         display: none;
+        /* border: 2px solid black; */
     }
 
     .container-items.active {
@@ -85,36 +89,6 @@ body {
     /* } */
 
 
-
-      @media (max-width: 1005px) {
-        .surbhi-nav{
-        padding: 0px 19%;
-    }
-      nav {
-        padding-left: 2rem; /* Adjust padding for medium screens */
-        padding-right: 2rem;
-        display: flex;
-        gap:10px;
-      }
-      nav a {
-        width:100%;
-        padding:12px 0px 12px 0px; 
-        margin: auto;
-      }
-      .content-section{
-        padding: 0 19%;
-      }
-      .surbhi-herobar{
-        padding: 0 19%;
-      }
-    }
-
-    @media (max-width: 800px) {
-      nav {
-        padding-left: 2.5rem; /* Adjust padding for small screens */
-        padding-right: 2.5rem;
-      }
-    }
 
 /* --flex-box part */
 
@@ -286,9 +260,14 @@ width: 85%;
 .space{
     margin-top: 2.45rem;
 }
+.products{
+  /* border: 2px solid black; */
+}
 
 .prodb{
     width: 100%;
+    /* border: 2px solid black; */
+    
 }
 .products-button{
     display: flex;
@@ -296,7 +275,7 @@ width: 85%;
         justify-content: center;
         align-items: center;
         padding-bottom: 60px;
-        width: 76rem;
+        max-width: 76rem;
         margin: auto;
 }
 
@@ -322,3 +301,26 @@ width: 85%;
 .products{
     text-decoration: none;
 }
+
+@media (max-width: 1005px) {
+        .surbhi-nav{
+        padding: 0px 19%;
+    }
+      nav {
+        padding-left: 2rem; 
+        padding-right: 2rem;
+        display: flex;
+        gap:10px;
+      }
+      nav a {
+        width:100%;
+        padding:12px 0px 12px 0px; 
+        margin: auto;
+      }
+      .content-section{
+        padding: 0 19%;
+      }
+      .surbhi-herobar{
+        padding: 0 19%;
+      }
+    }
